@@ -85,7 +85,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: 'https://unirise-ai.vercel.app/', // or whatever your frontend URL is
+}));
+
 app.use(express.json());
 app.use(morgan('dev'));
 
