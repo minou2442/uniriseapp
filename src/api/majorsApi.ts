@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { QuestionnaireAnswer, PredictionResult } from '../types';
 
-const API_URL = 'https://uniriseapp.onrender.com/api';
+const API_URL ='https://uniriseapp.onrender.com/api';
 
 export const predictMajor = async (answers: QuestionnaireAnswer): Promise<PredictionResult> => {
   try {
