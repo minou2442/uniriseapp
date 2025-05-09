@@ -56,7 +56,7 @@ const QuestionnaireForm: React.FC<FormProps> = ({ onResultReceived, setIsLoading
       setIsLoading(true);
       setError(null);
 
-      const response = await axios.post('http://localhost:5000/api/predict-major', {
+      const response = await axios.post('https://uniriseapp.onrender.com/api/predict-major', {
         answers
       });
 
